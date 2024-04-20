@@ -15,7 +15,7 @@ export default function App() {
         <h2 className="mb-20 font-bold text-blue-600 text-4xl">Random Quote</h2>
         <div className="bg-blue-600 w-full max-w-3xl rounded-lg p-4 flex justify-center flex-col items-center">
           <p className="mb-6 text-center text-white text-lg font-semibold">
-            {quote}
+            {quote || "Click the button to get a random quote"}
           </p>
           <Button onClick={() => refetch()}>+ New</Button>
         </div>
